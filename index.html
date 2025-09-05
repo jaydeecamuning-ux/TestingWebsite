@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RedBull-style Login</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<main class="container" role="main">
+<header>
+<div class="brand">
+<div class="logo">Test</div>
+<div style="flex:1">
+<h1 style="font-size:18px;margin:0">Test Website</h1>
+</div>
+</div>
+
+
+<h2>Welcome back!</h2>
+<p class="leadin">To continue, first verify that it's you</p>
+
+
+<div class="tabs" role="tablist">
+<button class="tab active" id="tab-login">LOGIN</button>
+<button class="tab inactive" id="tab-register">REGISTER</button>
+</div>
+</header>
+
+
+<form id="loginForm" novalidate>
+<div class="form-row">
+<label for="account">LOGIN ACCOUNT NUMBER</label>
+<div class="input">
+<div class="country">+63</div>
+<input id="account" name="account" type="tel" placeholder="Enter login account number" pattern="[0-9]+" inputmode="numeric" aria-label="login account number">
+</div>
+</div>
+
+
+<div class="form-row">
+<label for="key">LOGIN KEY</label>
+<div class="input">
+<input id="key" name="key" type="password" placeholder="Enter login key" aria-label="login key">
+</div>
+</div>
+
+
+<div class="spacer"></div>
+
+
+<button type="submit" class="login-btn">LOGIN</button>
+</form>
+
+
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
