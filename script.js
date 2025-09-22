@@ -1,5 +1,5 @@
 // script.js
-const API_URL = "http://localhost:3000";
+const API_URL = "https://my-backend-7yu8.onrender.com";
 const tabLogin = document.getElementById('tab-login');
 const tabReg = document.getElementById('tab-register');
 const loginForm = document.getElementById('loginForm');
@@ -102,3 +102,4 @@ function verifyOTP() {
   })
   .catch(err => console.error(err));
 }
+
